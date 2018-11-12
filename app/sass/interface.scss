@@ -1,0 +1,19 @@
+.button {
+  display: flex;
+  padding: {
+    top: 0.2rem;
+    bottom: 0.2rem;
+    left: 0.6rem;
+    right: 0.6rem;
+  };
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background-image: $bg-buttons;
+  color: white;
+  font: {
+    weight: 900;
+    size: 1.2rem;
+  };
+  cursor: pointer;
+}

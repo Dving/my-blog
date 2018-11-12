@@ -1,0 +1,146 @@
+@charset "UTF-8";
+// /* Повторяемость используется для улучшения читаемости кода */
+//
+// /** Наборы медиазапросов
+// @media (min-width: 576px) //36rem
+// @media (min-width: 768px) //48rem
+// @media (min-width: 992px) //62rem
+// @media (min-width: 1200px) //75rem
+//
+// @media (max-width: 36rem) {}
+// @media (min-width: 36rem) and (max-width: 48rem) {}
+// @media (min-width: 48rem) and (max-width: 62rem) {}
+// @media (min-width: 62rem) and (max-width: 75rem) {}
+// @media (min-width: 75rem) {}
+//
+// /** Наборы свойств flexbox
+//  flex: {
+//    direction: row;
+//    wrap: nowrap;
+//    grow: 0;
+//    shrink: 0;
+//    basis: content;
+//  };
+//  align: {
+//    items: stretch;
+//    self: auto;
+//    content: stretch;
+//  }
+//
+//
+@import "variables.scss";
+@import "interface.scss";
+@import "libs.scss";
+@import "templates.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Begin Structure */
+.page-container {
+  display: flex;
+  flex: {
+    direction: column;
+  };
+  align: {
+    items: center;
+  };
+}
+
+.wrap {
+  &-header {
+    background: $bg-header;
+
+    @media screen and (max-width: 36rem) {
+      width: 90vw;
+    }
+    @media screen and (min-width: 36rem) and (max-width: 48rem) {
+      width: 85vw;
+    }
+    @media screen and (min-width: 48rem) and (max-width: 62rem) {
+      width: 80vw;
+    }
+    @media screen and (min-width: 62rem) and (max-width: 75rem) {
+      width: 70vw;
+    }
+    @media screen and (min-width: 75rem) {
+      width: 60vw;
+    }
+  }
+
+  &-main {
+    flex: {
+      grow: 1;
+      shrink: 1;
+    };
+    background: $bg-main;
+    @media screen and (max-width: 36rem) {
+      width: 90vw;
+    }
+    @media screen and (min-width: 36rem) and (max-width: 48rem) {
+      width: 85vw;
+    }
+    @media screen and (min-width: 48rem) and (max-width: 62rem) {
+      width: 80vw;
+    }
+    @media screen and (min-width: 62rem) and (max-width: 75rem) {
+      width: 70vw;
+    }
+    @media screen and (min-width: 75rem) {
+      width: 60vw;
+    }
+  }
+
+  &-footer {
+    min-height: 3rem;
+    background: $bg-footer;
+
+    @media screen and (max-width: 36rem) {
+      width: 90vw;
+    }
+    @media screen and (min-width: 36rem) and (max-width: 48rem) {
+      width: 85vw;
+    }
+    @media screen and (min-width: 48rem) and (max-width: 62rem) {
+      width: 80vw;
+    }
+    @media screen and (min-width: 62rem) and (max-width: 75rem) {
+      width: 70vw;
+    }
+    @media screen and (min-width: 75rem) {
+      width: 60vw;
+    }
+  }
+}
+
+.header {
+  display: flex;
+  flex: {
+    direction: column;
+  };
+  padding-top: 2rem;
+  &__wrap {
+    &-logo {}
+    &-menu {
+      margin-top: 1rem;
+    }
+  }
+}
+
+.main {
+  display: flex;
+    padding: {
+      left: 2rem;
+      right: 2rem;
+    };
+  flex: {
+    shrink: 1;
+  };
+}
+
+.footer {
+  display: flex;
+}
+// /* End Structure */

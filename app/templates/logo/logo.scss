@@ -1,0 +1,12 @@
+.logo {
+  width: 26em;
+  border-top: 0.2rem double $first-color;
+  &__title {
+    padding: 15px 0;
+    text-align: center;
+    color: $first-color;
+    font-weight: 900;
+    font-size: 3em;
+    border-bottom: 0.2rem double $first-color;
+  }
+}

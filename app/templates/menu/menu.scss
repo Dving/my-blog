@@ -1,0 +1,88 @@
+//  Styles for the template "menu.html"
+
+.menu {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+
+  &__list {
+    display: inline-flex;
+    width: 100%;
+    padding: {
+      top: 2rem;
+      bottom: 1rem;
+    };
+    justify-content: center;
+    list-style-type: none;
+
+  }
+
+  &__item {
+    padding: 0 30px;
+    font-weight: 900;
+    font-size: 1.5rem;
+
+    &-upper {
+      @media (max-width: 36rem) {
+        display: none;
+      }
+      @media (min-width: 36rem) and (max-width: 48rem) {
+        display: none;
+      }
+      @media (min-width: 48rem) and (max-width: 62rem) {
+        display: "";
+      }
+      @media (min-width: 62rem) and (max-width: 75rem) {
+        display: "";
+      }
+      @media (min-width: 75rem) {
+        display: "";
+      }
+    }
+    &-lower {
+      @media (max-width: 36rem) {
+        display: "";
+      }
+      @media (min-width: 36rem) and (max-width: 48rem) {
+        display: "";
+      }
+      @media (min-width: 48rem) and (max-width: 62rem) {
+        display: none;
+      }
+      @media (min-width: 62rem) and (max-width: 75rem) {
+        display: none;
+      }
+      @media (min-width: 75rem) {
+        display: none;
+      }
+    }
+    &-hidden {
+      display: none;
+    }
+
+    & a {
+      color: $first-color;
+      text-decoration: none;
+
+      &:visited {
+        color: $first-color;
+      }
+
+      &:active {
+        color: $first-color;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &-line {
+    width: 100%;
+    height: 0.2rem;
+    background: $first-color;
+    border: none;
+  }
+}

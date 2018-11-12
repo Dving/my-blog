@@ -1,0 +1,15 @@
+// Triangle color schema
+$first-color: rgb(132, 0, 3);
+$first-color-darken: rgb(55, 6, 7);
+$second-color: rgb(10, 54, 81);
+$second-color-lighten: rgb(10, 134, 208);
+$third-color: rgb(145, 142, 14);
+
+
+$bg-header: white !default;
+$bg-main: white !default;
+$bg-footer: $second-color !default;
+$bg-buttons: linear-gradient(180deg, $first-color, $first-color-darken) !default;
+
+
+$box-shadow: 10px 10px 10px rgba(112, 112, 112, 0.5) !default;

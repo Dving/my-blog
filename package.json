@@ -1,0 +1,53 @@
+{
+  "name": "my-blog",
+  "version": "0.0.1",
+  "description": "my-blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Den Piaterenkov",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "latest",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "latest",
+    "gulp-cached": "latest",
+    "gulp-clean-css": "latest",
+    "gulp-concat": "latest",
+    "gulp-debug": "latest",
+    "gulp-if": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-newer": "latest",
+    "gulp-notify": "latest",
+    "gulp-plumber": "latest",
+    "gulp-remember": "latest",
+    "gulp-rigger": "latest",
+    "gulp-sass": "latest",
+    "gulp-sourcemaps": "latest",
+    "gulp-uglify": "latest",
+    "gulp-util": "latest",
+    "gulp-watch": "latest",
+    "imagemin-pngquant": "latest",
+    "jquery": "latest",
+    "normalize.css": "latest",
+    "npm-upgrade": "latest",
+    "slick-carousel": "latest"
+  },
+  "dependencies": {
+    "gulp-update": "latest",
+    "graceful-fs": "latest",
+    "hoek": "latest",
+    "boom": "latest",
+    "gulp-util": "latest",
+    "node-uuid": "latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dving/my-blog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dving/my-blog/issues"
+  },
+  "homepage": "https://github.com/dving/my-blog#readme"
+}

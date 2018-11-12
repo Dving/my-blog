@@ -1,0 +1,33 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: {
+    bottom: 1rem;
+  };
+  &__copyrite {
+    padding-top: 15px;
+    text-align: center;
+    color: $third-color;
+    font-size: 0.8rem;
+    &:before {
+      content: "© ";
+    }
+    &-icons {
+      & a {
+      color: $third-color;
+
+      &:visited {
+        color: $third-color;
+      }
+
+      &:active {
+        color: $third-color;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    }
+  }
+}
