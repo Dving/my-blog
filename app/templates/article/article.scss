@@ -1,48 +1,83 @@
 .article {
   padding: {
     top: 1rem;
-    bottom: 1rem;
+    bottom: 2rem;
   };
+
   &__title {
     padding: {
       left: 1.5rem;
+      top: 1rem;
     };
+
     font: {
       size: 2.2rem;
     };
   }
+
   &__date {
     text-align: right;
+
     padding: {
       top: 1rem;
       bottom: 0.5rem;
       right: 4rem;
     };
+
     font: {
       size: 1rem;
       style: italic;
     };
   }
+
   &__subtitle {
     font: {
       size: 1.4rem;
     };
+
     padding: {
       top: 1rem;
       bottom: 1rem;
       left: 1.5rem;
     };
   }
+
   &__post {
     font: {
       size: 1.2rem;
     };
+
+    ul {
+      padding-left: 4rem;
+    }
   }
+
+  &__image {
+    width: 20rem;
+    margin-right: 1rem;
+
+    margin: {
+      right: 1rem;
+      bottom: 1rem;
+    }
+
+    float: left;
+
+    @media screen and (max-width: 36rem) {
+      width: 26rem;
+    }
+
+    @media screen and (min-width: 36rem) and (max-width: 48rem) {
+      width: 14rem;
+    }
+  }
+
   &__footer {
     padding: {
       top: 1rem;
       left: 4rem;
     };
+
     font: {
       size: 1.1rem;
       style: italic;

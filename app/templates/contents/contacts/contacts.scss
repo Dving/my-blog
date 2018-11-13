@@ -10,6 +10,18 @@
     self: center;
     content: center;
   };
+  &__title {
+    padding: {
+      bottom: 1rem;
+    };
+    font-size: 1.5rem;
+    font: {
+      size: 1.7rem;
+      weight: 900;
+      style: italic;
+    };
+    text-decoration: underline;
+  }
 
   &__wrap {
     &-upper {

@@ -36,7 +36,7 @@
 const gulp          = require('gulp'); // Подключаем Gulp
 const gutil         = require('gulp-util');
 const del           = require('del'); // Подключаем библиотеку для удаления файлов и папок
-const rename         = require('gulp-rename'); // Подключаем библиотеку для переименования файлов
+const rename        = require('gulp-rename'); // Подключаем библиотеку для переименования файлов
 const path          = require('path'); // Модуль для преобразования пути из относительного в абсолютный
 const rigger        = require('gulp-rigger'); // Подключаем библиотеку для сборки итогового файла из шаблонов
 const browserSync   = require('browser-sync'); // Подключаем Browser Sync
@@ -214,9 +214,7 @@ gulp.task('image:build', gulp.parallel(function () {
 
 // Таск для копирования папки assets
 gulp.task('assets:build', gulp.parallel(function() {
-    // {since: gulp.lastRun('assets:build')} проверяет, что файл изменен с последнго запуска
-    // Если файл не менялся, то поток дальше не передается
-    return gulp.src(mypath.src.assets, {since: gulp.lastRun('assets:build')})
+    return gulp.src(mypath.src.assets)
         .pipe(debug({title: 'assets'})) // Смотрим какие файлы обрабатываются
         .pipe(newer('assets:build')) // Проверить что файл новый, иначе завершить
         .pipe(gulp.dest(mypath.build.assets))
