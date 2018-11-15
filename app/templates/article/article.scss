@@ -47,8 +47,31 @@
       size: 1.2rem;
     };
 
+    p {
+      padding: {
+        top: 0.7rem;
+        bottom: 0.7rem;
+      };
+      text-indent: 1rem;
+    }
+
     ul {
       padding-left: 4rem;
+    }
+
+    figure {
+      img {
+        margin: 0;
+        padding: 0;
+      }
+      float: right;
+      text-align: center;
+      font-style: italic;
+      font-size: smaller;
+      text-indent: 0;
+      border: thin silver solid;
+      margin: 0.5rem;
+      padding: 0.5rem;
     }
   }
 

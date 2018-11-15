@@ -201,12 +201,12 @@ gulp.task('image:build', gulp.parallel(function () {
     return gulp.src(mypath.src.img, {since: gulp.lastRun('image:build')})
         .pipe(debug({title: 'image'})) // Смотрим какие файлы обрабатываются
         .pipe(newer('image:build')) // Проверить что файл новый, иначе завершить
-        .pipe(imagemin({ // Преобразование изображений
-            progressive: true,
-            svgoPlugins: [{removeViewBox: false}],
-            use: [pngquant()],
-            interlaced: true
-        }))
+        // .pipe(imagemin({ // Преобразование изображений
+        //     progressive: true,
+        //     svgoPlugins: [{removeViewBox: false}],
+        //     use: [pngquant()],
+        //     interlaced: true
+        // }))
         .pipe(gulp.dest(mypath.build.img))
         .pipe(bsreload({stream: true}))
 }));
