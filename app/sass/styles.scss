@@ -41,6 +41,7 @@
 /* Begin Structure */
 .page-container {
   display: flex;
+  height: 100vh;
   flex: {
     direction: column;
   };
@@ -136,6 +137,7 @@
       right: 2rem;
     };
   flex: {
+    grow: 1;
     shrink: 1;
   };
 }
