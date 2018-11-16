@@ -26,7 +26,6 @@
     "gulp-sass": "latest",
     "gulp-sourcemaps": "latest",
     "gulp-uglify": "latest",
-    "gulp-util": "latest",
     "gulp-watch": "latest",
     "imagemin-pngquant": "latest",
     "jquery": "latest",
@@ -39,7 +38,6 @@
     "graceful-fs": "latest",
     "hoek": "latest",
     "boom": "latest",
-    "gulp-util": "latest",
     "node-uuid": "latest"
   },
   "repository": {
